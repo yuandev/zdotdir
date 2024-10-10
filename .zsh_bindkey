@@ -1,0 +1,63 @@
+bindkey -R "^A"-"^C" self-insert
+bindkey "^D" list-choices
+bindkey -R "^E"-"^F" self-insert
+bindkey "^G" list-expand
+bindkey "^H" vi-backward-delete-char
+bindkey "^I" expand-or-complete
+bindkey "^J" accept-line
+bindkey "^K" self-insert
+bindkey "^L" clear-screen
+bindkey "^M" accept-line
+bindkey -R "^N"-"^P" self-insert
+bindkey "^Q" vi-quoted-insert
+bindkey "^R" redisplay
+bindkey -R "^S"-"^T" self-insert
+bindkey "^U" vi-kill-line
+bindkey "^V" vi-quoted-insert
+bindkey "^W" backward-kill-word
+bindkey "^X^R" _read_comp
+bindkey "^X?" _complete_debug
+bindkey "^XC" _correct_filename
+bindkey "^Xa" _expand_alias
+bindkey "^Xc" _correct_word
+bindkey "^Xd" _list_expansions
+bindkey "^Xe" _expand_word
+bindkey "^Xh" _complete_help
+bindkey "^Xm" _most_recent_file
+bindkey "^Xn" _next_tags
+bindkey "^Xt" _complete_tag
+bindkey "^X~" _bash_list-choices
+bindkey -R "^Y"-"^Z" self-insert
+bindkey "^[" vi-cmd-mode
+bindkey "^[^[OC" vi-forward-word
+bindkey "^[^[OD" vi-backward-word
+bindkey "^[^[[C" vi-forward-word
+bindkey "^[^[[D" vi-backward-word
+bindkey "^[," _history-complete-newer
+bindkey "^[/" _history-complete-older
+bindkey "^[OA" up-line-or-history
+bindkey "^[OB" down-line-or-history
+bindkey "^[OC" vi-forward-char
+bindkey "^[OD" vi-backward-char
+bindkey "^[OF" end-of-line
+bindkey "^[OH" beginning-of-line
+bindkey "^[Oc" vi-forward-word
+bindkey "^[Od" vi-backward-word
+bindkey "^[[1;3C" vi-forward-word
+bindkey "^[[1;3D" vi-backward-word
+bindkey "^[[1;5C" vi-forward-word
+bindkey "^[[1;5D" vi-backward-word
+bindkey "^[[200~" bracketed-paste
+bindkey "^[[3~" delete-char
+bindkey "^[[5C" vi-forward-word
+bindkey "^[[5D" vi-backward-word
+bindkey "^[[A" up-line-or-history
+bindkey "^[[B" down-line-or-history
+bindkey "^[[C" vi-forward-char
+bindkey "^[[D" vi-backward-char
+bindkey "^[~" _bash_complete-word
+bindkey -R "^\\\\"-"~" self-insert
+bindkey "^?" backward-delete-char
+bindkey -R "\M-^@"-"\M-^?" self-insert
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
