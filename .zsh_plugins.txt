@@ -226,6 +226,7 @@ belak/zsh-utils path:editor
 # Syntax highlighting
 #zsh-users/zsh-syntax-highlighting kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
+ MichaelAquilina/zsh-you-should-use kind:defer
 
 ### Final Plugins
 #
