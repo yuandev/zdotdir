@@ -106,10 +106,10 @@ $ZDOTDIR/.aliases
 ###
 
 # Use kind:fpath for prompts you want available to promptinit.
-romkatv/powerlevel10k kind:fpath
+sindresorhus/pure kind:fpath
 
 # Or, just load a prompt plugin the normal way.
-sindresorhus/pure
+romkatv/powerlevel10k
 
 
 ### Utilities
@@ -226,7 +226,7 @@ belak/zsh-utils path:editor
 # Syntax highlighting
 #zsh-users/zsh-syntax-highlighting kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
- MichaelAquilina/zsh-you-should-use kind:defer
+MichaelAquilina/zsh-you-should-use kind:defer
 
 ### Final Plugins
 #
