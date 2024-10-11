@@ -32,3 +32,10 @@ source $ZDOTDIR/.zsh_bindkey
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+#Bash and Zsh: Add the following line to your ~/.bash_profile (bash) or ~/.zshrc (zsh):
+#https://github.com/Homebrew/homebrew-command-not-found
+HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+source "$HB_CNF_HANDLER";
+fi

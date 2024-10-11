@@ -227,6 +227,9 @@ belak/zsh-utils path:editor
 #zsh-users/zsh-syntax-highlighting kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
 MichaelAquilina/zsh-you-should-use kind:defer
+wuotr/zsh-plugin-vscode kind:defer
+windwhinny/spaceship-arch kind:defer
+fielding/zsh-brew-switcher kind:defer
 
 ### Final Plugins
 #
@@ -238,3 +241,4 @@ MichaelAquilina/zsh-you-should-use kind:defer
 # These popular core plugins should be loaded at the end
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
+D3STY/cros-auto-notify-zsh
