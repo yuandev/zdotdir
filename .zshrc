@@ -40,3 +40,4 @@ unset _rc
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
 
 export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
+. "$HOME/.local/share/../bin/env"
