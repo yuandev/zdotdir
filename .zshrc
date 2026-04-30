@@ -41,3 +41,6 @@ unset _rc
 
 export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
 . "$HOME/.local/share/../bin/env"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
