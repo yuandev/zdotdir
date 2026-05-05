@@ -40,7 +40,9 @@ unset _rc
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
 
 export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
-. "$HOME/.local/share/../bin/env"
+if [[ -f "$HOME/.local/bin/env" ]]; then
+  . "$HOME/.local/bin/env"
+fi
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
