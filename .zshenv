@@ -24,7 +24,7 @@ path=(
 )
 . "$HOME/.cargo/env"
 
-# Java
-[[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 17 &>/dev/null && export JAVA_17=$(/usr/libexec/java_home -v 17)
-[[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 21 &>/dev/null && export JAVA_21=$(/usr/libexec/java_home -v 21)
+# Java (Homebrew)
+export JAVA_17=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+[[ -d /opt/homebrew/opt/openjdk@21 ]] && export JAVA_21=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
 export JAVA_HOME=${JAVA_21:-$JAVA_17}
