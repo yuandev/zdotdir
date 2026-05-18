@@ -23,3 +23,8 @@ path=(
   $path
 )
 . "$HOME/.cargo/env"
+
+# Java
+[[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 17 &>/dev/null && export JAVA_17=$(/usr/libexec/java_home -v 17)
+[[ -x /usr/libexec/java_home ]] && /usr/libexec/java_home -v 21 &>/dev/null && export JAVA_21=$(/usr/libexec/java_home -v 21)
+export JAVA_HOME=${JAVA_21:-$JAVA_17}
