@@ -23,3 +23,8 @@ path=(
   $path
 )
 . "$HOME/.cargo/env"
+
+# Java (Homebrew)
+export JAVA_17=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+[[ -d /opt/homebrew/opt/openjdk@21 ]] && export JAVA_21=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME=${JAVA_21:-$JAVA_17}
